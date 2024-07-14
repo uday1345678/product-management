@@ -1,0 +1,12 @@
+firstname="uday"
+lastname="singh"
+print(firstname)
+print(lastname)
+print("firstname=",firstname)
+print("lastname=",lastname)
+print(f"firstname={firstname}")
+print(f"lastname={lastname}")
+print("name={}".format(firstname))
+print("lastname={}".format(lastname))
+print("firstname=%s"%(firstname))
+print("lastname=%s"%(lastname))
