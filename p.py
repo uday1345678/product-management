@@ -166,7 +166,7 @@ k=factorial()
 print(k)
  """
 
-""" def factorial(n1,n2):
+def factorial(n1,n2):
     while(n2>=1):
         n1=n1*n2
         n2=n2-1
@@ -174,13 +174,13 @@ print(k)
 k=factorial(1,9)
 print(k)
 
-def student():
+""" def student():
     dictionary={"id":23,"name":123}
     information(dictionary)
 def information(dictionary):
     print(dictionary)
 student()
-
+ """
 def bank():
     amount=2900
     print(amount)
@@ -191,17 +191,19 @@ def bank():
         elif(n==2):
             
             b2 =int(input("enter amount"))
-            if (b2<=amount):
+           
             
-                amount=amount-b2
-            else:
-             print("insufficent balance")
+            amount=amount+b2
+            
             print(amount)
         elif(n==3):
 
             c3=int(input("enter amount"))
-            amount=amount+c3
-            print(amount)
+            if c3<=amount:
+                amount=amount-c3
+            else:
+
+                print("insufficient balance")
         else:
             break
 def user():
@@ -213,7 +215,7 @@ def user():
     else:
         ("login failed")
 user()
- """
+ 
 
 """ def bank():
     amount=5000

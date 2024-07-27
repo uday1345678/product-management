@@ -33,8 +33,9 @@ class user:
         print(userdata)
         self.login()
 object=user()
+object.register()
 
-
+""" 
 class teacher:
     def teacher(self):
         print("teacher")
@@ -61,4 +62,4 @@ object=studentmngmnt()
 object.studentmngmnt()
 
 
-
+ """
