@@ -35,7 +35,7 @@ user.UserPrint()
 user.UserLogin()       
  """
 
-class profile:
+""" class profile:
    def __init__(self,data):
       print(data)
       
@@ -74,11 +74,30 @@ user.useradd()
 user.userprint()
 user.payment()
 user.userlogin()       
-
+ """
        
 
         
+class userFile:
+    def userWrite(self):
+        #file=open("filename","mode") # W write a append r read  mode(w,a,r)
+        f= input("enter file name")
+        file =open(f,"w")
+        name = input("enter name")
+        file.write(name)
+        file.close()
+    def useRead(self):
+        f= input("enter file name")
+        file=open(f,"r")
+        for i in file:
+            print(i) 
+    def userAppend(self):
+        f = input("file name")
+        file=open(f,"a")
+        name = input("enter name")
+        file.write(name)
 
-
-        
-        
+user = userFile()
+user.userWrite()
+user.useRead()
+user.userAppend()
