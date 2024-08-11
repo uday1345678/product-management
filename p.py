@@ -227,6 +227,7 @@ user()
             print(amount)
             b3=int(input("enter amount"))
             amount=amount-b3
+            
         elif(n==3):
             print(amount)
             b5=int(input("enter amount"))
