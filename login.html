@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+        div{
+            box-sizing: content-box;overflow: hidden;padding: 20px;
+        }
+        input
+        {
+            width: 98%;margin-top: 10px;height: 25px;
+        }
+    button{
+cursor: pointer;
+        height:25px ;width: 100%;margin-top: 10px;background-color: #0069ad;border:none;color:white
+        }
+        .divadmin{
+            height: 400px;width: 100%;background-color: #0069ad;display: none;
+        }
+.register{
+    height: 500px;width: 100%;background-color: #0069ad;display: none;
+}
+
+    </style>
+    <div id="login" style="width: 100%;height: 500px;position: relative;">
+        <div style=" text-align: center;display: block; width:30%;height:300px;background-color: white;position: absolute;left: 35%;top: 100px;border: 1px solid grey;border-radius: 10px;">
+            
+            <img src="12.jpeg" alt="" style="width: 100px;height: 100px;">
+            <input id="name" type="text" placeholder="USERNAME,GMAIL OR LOGIN ID">
+            <span id="nameerror"></span>
+          <input id ="pass" type="ENTER PASSWORD" placeholder="****">
+         <span id="passerror" ></span>
+          <button onclick="fun1()" id="incorrectpassword">login</button>
+        <button onclick="register()">register</button>
+        
+    </div>
+    </div>
+    <div id="admin"  class="divadmin">
+
+        <button id="logout" onclick="funout()"  style="background-color: white;width: 100px;color: rgb(15, 23, 141);padding: 10px;">log out</button>
+    </div>
+<div id="register" class="register">
+<h1>register</h1>
+<input id="name" type="text" placeholder="USERNAME,GMAIL OR LOGIN ID">
+<span id="nameerror"></span>
+<input id ="pass" type="ENTER PASSWORD" placeholder="****">
+<span id="passerror" ></span>
+<button onclick="fun1()" id="incorrectpassword">login</button>
+<button onclick="register()">register</button>wsw
+</div>
+
+
+</html>
+<script>
+function register(){
+var admin=document.getElementById('admin')
+admin.style.display="none"
+var login=document.getElementById('login')
+login.style.display="none"
+var register=document.getElementById('register')
+register.style.display="block"
+
+}
+function funout(){
+    alert("USER HAS LOGGED OUT")
+var admin=document.getElementById('admin')
+admin.style.display="none"
+var login=document.getElementById('login')
+login.style.display="block"
+}
+
+
+    function fun1(){
+        var username=document.getElementById('name').value
+        var pass=document.getElementById('pass').value
+    if (username==""){
+        var usererror=document.getElementById('nameerror')
+        usererror.innerHTML="USERNAME CANNOT BE EMPTY"
+        usererror.style.color="black"
+    
+    
+    }
+    else{
+        var usererror=document.getElementById('nameerror')
+        usererror.innerHTML=""
+        usererror.style.color="black"
+    
+    }
+    if (pass==""){
+        var passerror=document.getElementById('passerror')
+        passerror.innerHTML="PASSWORD CANNOT BE EMPTY"
+        passerror.style.color="black"
+
+    }
+    else{
+
+        var passerror=document.getElementById('passerror')
+        passerror.innerHTML=""
+        passerror.style.color="black"
+
+    }
+    if(username=="admin"&&pass=="123")
+    {
+        alert("user login")
+        var admin1=document.getElementById('admin')
+        admin1.style.display="block"
+
+        var login=document.getElementById('login')
+        login.style.display="none"
+
+    }
+else{
+var incorrectpassword=document.getElementById('incorrectpassword')
+incorrectpassword.style.backgroundColor="black"
+
+}
+}
+
+
+
+</script>
+
+
+

@@ -1,4 +1,4 @@
-""" import pandas as p
+import pandas as p
 
 studentinfo={"id":[1,2,3,4,5],
             "name":["user1","user2","user3","user4","user5"],
@@ -9,7 +9,7 @@ studentinfo={"id":[1,2,3,4,5],
 
 f1=p.DataFrame(studentinfo)
 print(f1)
- """
+ 
 """ class userfile:
     def write(self):
         print("write")
@@ -73,7 +73,7 @@ while(True):
     else:
         break
  """
-import bank as b
+""" import bank as b
 useremail=["user1@gmail.com","user2@gmail.com"]
 userpass=[123,456]
 emaillogin=input("enter email")
@@ -86,4 +86,4 @@ for i in range(len(useremail)):
             b.bank()
     else:
         print("error 404")
-
+ """

@@ -10,4 +10,4 @@ data = {
 pd =p.DataFrame(data)
 
 print(pd)
-print(pd['name'],pd['salary'])
+
